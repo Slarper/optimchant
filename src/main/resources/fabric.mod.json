@@ -25,7 +25,7 @@
   "mixins": [
     "notenoughexp.mixins.json",
     "constantcost.mixins.json",
-    "enchantedbookrubbing.mixins.json"
+    "rubbing.mixins.json"
   ],
 
   "depends": {

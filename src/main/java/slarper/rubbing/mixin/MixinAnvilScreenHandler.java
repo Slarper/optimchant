@@ -1,4 +1,4 @@
-package slarper.enchantedbookrubbing.mixin;
+package slarper.rubbing.mixin;
 
 import net.minecraft.block.AnvilBlock;
 import net.minecraft.block.BlockState;
