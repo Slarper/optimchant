@@ -33,7 +33,9 @@ public abstract class MixinAnvilScreenHandler extends ForgingScreenHandler {
         if (input0.getItem() == Items.BOOK && input1.getItem() == Items.ENCHANTED_BOOK){
             this.levelCost.set(1);
             this.repairItemUsage = 0;
-            this.output.setStack(0, input1.copy());
+            ItemStack output = input1.copy();
+            output.setCount(1);
+            this.output.setStack(0,output);
             this.sendContentUpdates();
             ci.cancel();
         }
@@ -48,7 +50,7 @@ public abstract class MixinAnvilScreenHandler extends ForgingScreenHandler {
                 player.addExperienceLevels(-this.levelCost.get());
             }
 
-            if (!input0.isEmpty()){
+            if (!input0.isEmpty() && input0.getCount() > 1){
                 input0.decrement(1);
                 this.input.setStack(0,input0);
             } else {
