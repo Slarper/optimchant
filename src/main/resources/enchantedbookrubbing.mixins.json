@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "slarper.enchantedbookrubbing.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinAnvilScreenHandler"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
