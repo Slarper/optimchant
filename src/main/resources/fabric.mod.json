@@ -25,7 +25,8 @@
   "mixins": [
     "notenoughexp.mixins.json",
     "constantcost.mixins.json",
-    "rubbing.mixins.json"
+    "rubbing.mixins.json",
+    "stackable.mixins.json"
   ],
 
   "depends": {
