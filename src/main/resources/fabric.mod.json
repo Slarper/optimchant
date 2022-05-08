@@ -19,12 +19,13 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "slarper.anvilrepair.AnvilRepair"
+      "slarper.anvilrepair.AnvilRepair",
+      "slarper.stackable.Stackable"
     ]
   },
   "mixins": [
-    "notenoughexp.mixins.json",
     "constantcost.mixins.json",
+    "notenoughexp.mixins.json",
     "rubbing.mixins.json",
     "stackable.mixins.json"
   ],
