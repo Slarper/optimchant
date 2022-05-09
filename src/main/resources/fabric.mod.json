@@ -20,13 +20,14 @@
   "entrypoints": {
     "main": [
       "slarper.anvilrepair.AnvilRepair",
+      "slarper.rubbing.Rubbing",
       "slarper.stackable.Stackable"
     ]
   },
   "mixins": [
+    "anvilapi.mixins.json",
     "constantcost.mixins.json",
     "notenoughexp.mixins.json",
-    "rubbing.mixins.json",
     "stackable.mixins.json"
   ],
 
